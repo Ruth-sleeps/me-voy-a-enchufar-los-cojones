@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>me voy a enchufar los cojones</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                text-align: center;
+                margin: 0;
+                padding: 0;
+                background-color: #ffcdec;
+            }
+            .container {
+                max-width: 600px;
+                margin: 50px auto;
+                padding: 20px;
+                background: white;
+                border-radius: 15px;
+                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            }
+            h1 {
+                color: #e60073;
+                transition: transform 0.3s ease;
+            }
+            h1:hover {
+                transform: scale(1.1);
+            }
+            p {
+                font-size: 18px;
+                color: #333;
+                max-width: 600px;
+                margin: 50px auto;
+                margin-top: 10px;
+                text-align: center;
+            }
+            .heart {
+                font-size: 50px;
+                margin-top: -30px;
+                margin-bottom: 2px;
+                color: pink;
+                transition: transform 0.3s ease;
+            }
+            .heart:hover {
+                transform: scale(1.2);
+            }
+            button {
+                margin-top: 0px;
+                margin-bottom: 10px;
+            }
+            .button {
+                display: inline-block;
+                background: #e60073;
+                color: white;
+                padding: 10px 20px;
+                margin-top: 20px;
+                border-radius: 25px;
+                text-decoration: none;
+                font-weight: bold;
+            }
+            .button:hover {
+                background: #ff4081;
+            }
+            .image-container {
+                margin-top: 20px;
+            }
+            img {
+                max-width: 100%;
+                border-radius: 10px;
+                transition: box-shadow 0.3s ease;
+                transition: transform 0.3s ease;
+            }
+            img:hover {
+                box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+                transform: scale(1.1);
+            }
+            .video-container {
+                margin-top: 20px;
+                display: flex;
+                justify-content: center;
+            }
+            .typing {
+                overflow: hidden;
+                white-space: nowrap;
+                border-right: 3px solid;
+                animation: typing 3s steps(20) forwards, blink 0.5s infinite;
+            }
+            @keyframes typing {
+                from { width: 0; }
+                to { width: 100%; }
+            }
+            @keyframes blink {
+                50% { border-color: transparent; }
+            }
+            @keyframes fall {
+                to { transform: translateY(100vh); opacity: 0; }
+            }
+            footer {
+                background-color: #c969a4;
+                color: white;
+                padding: 10px;
+                position: relative;
+                bottom: 0;
+                width: 100%;
+                text-align: center; 
+            }
+            @keyframes fadeIn {
+                from {
+                    opacity: 0;
+                }
+                to {
+                    opacity: 1;
+                }
+            }
+            img {
+                animation: fadeIn 2s ease-in;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 class="typing"> wind of change</h1>
+        <p>La verdad es que quise prepararte toda una página web por una razón.
+            Mientras vivía algunos de los mejores momentos de mi vida, no podía dejar 
+            de pensar en cuánto me gustaría que estuvieras aquí, divirtiéndote y 
+            compartiendo esta experiencia conmigo.
+            Imagínalo: nosotros dos diseñando un programa, un juego, una web… lo que sea. 
+            Las posibilidades serían infinitas.
+            Podríamos aprender juntos, desafiar nuestros límites y abrir nuestras mentes 
+            a nuevos retos. Tú conmigo.</p>
+        <div class="container">
+            <h1>💖 Feliz 1 mes para mi cum 💖</h1>
+            <div class="image-container">
+                <img src="./img_/ong.jpg" alt="callaaa">
+            <p>Calla pookie,<br><br> quiero aprovechar este precioso html para expresarte lo <b>mucho</b> que significas para mí.
+                Eres increíble y cada momento contigo es un sueño, (de alguna manera real), que me cuesta creer.</p>
+            <p class="heart">💗💗💗💌💌💌</p>
+            <a href="./sub.html" class="button">Haz click para recibir un troyano</a>
+        </div>
+        <div class="image-container">
+            <img src="img_/dick.jpg" alt="sexooo">
+        </div>
+    </div>
+    <div class="video-container">
+        <a href="https://open.spotify.com/intl-es/track/0BxE4FqsDD1Ot4YuBXwAPp?si=856a957125e14535" target="_blank" class="button">Temazo para ti</a>
+    </div>
+    <div class="container">
+        <h1>dude?</h1>
+        <audio controls>
+            <source src="./aud_/aah.mp3" type="audio/mpeg">
+        </audio>
+    </div>
+    <button onclick="document.getElementById('mensaje-secreto').style.display='block'">
+        mensaje secreto, dale click
+    </button>
+    <p id="mensaje-secreto" style="display: none;">eres gay 💕</p>
+    <script>
+        function createHeart() {
+            const heart = document.createElement('div');
+            heart.innerHTML = '❤️';
+            heart.style.position = 'fixed';
+            heart.style.left = Math.random() * 100 + 'vw';
+            heart.style.top = '-10px';
+            heart.style.fontSize = Math.random() * 20 + 20 + 'px';
+            heart.style.animation = 'fall 5s linear';
+            document.body.appendChild(heart);
+            setTimeout(() => heart.remove(), 5000);
+        }
+        setInterval(createHeart, 300);
+    </script>
+    </body>
+    <footer>no, jódete y cágate en satán. de mí para ti.
+    </footer>
+</html>
