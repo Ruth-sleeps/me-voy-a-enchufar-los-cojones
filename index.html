@@ -64,6 +64,34 @@
                 border: 2px solid #e60073;
                 padding: 20px;
             }
+            /* el estilo general por así decirlo */
+            .menu {
+                font-family: "Crimson Text", serif;
+                font-weight: 700;
+                font-style: italic;
+                background-color: #000000;
+                overflow: hidden;
+                display: flex;
+                justify-content: center;
+                padding: 0;
+            }
+            /* los botoncitos */
+            .menu a {
+                display: block;
+                color: white;
+                text-align: center;
+                padding: 14px 20px;
+                text-decoration: none;
+                transition: 0.3s;
+            }
+            /* para cndo el mouse está encima lol */
+            .menu a:hover {
+                background-color: #4b4b4b;
+            }
+            /* y pa la pestaña activa */
+            .active {
+                background-color: #e60073;
+            }
             hr {
                 border: 1px solid #000000;
             }
@@ -163,6 +191,7 @@
                 to { transform: translateY(100vh); opacity: 0; }
             }
             footer {
+                font-family: Arial, sans serif;
                 background-color: #c969a4;
                 color: white;
                 padding: 10px;
@@ -185,6 +214,11 @@
         </style>
     </head>
     <body>
+        <div class="menu">
+            <a href="./index.html" class="active">Start page</a>
+            <a href="./guess.html">Joder</a>
+            <a href="./joder.html">Fumar asfalto</a>
+        </div>
         <h1 class="typing"><u>hysteria?!</u></h1>
         <p class="container2">Debo confesar que quise programarte toda una página web por un significante motivo.
             Mientras experimentaba algunos de los mejores momentos de mi vida, no podía evitar 
