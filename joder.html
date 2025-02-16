@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>joder</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap" rel="stylesheet">
+        <style>
+            .mochiy-pop-p-one-regular {
+                font-family: "Mochiy Pop P One", serif;
+                font-weight: 400;
+                font-style: normal;
+            }
+            .crimson-text-regular {
+                font-family: "Crimson Text", serif;
+                font-weight: 400;
+                font-style: normal;
+            }
+            .crimson-text-semibold {
+                font-family: "Crimson Text", serif;
+                font-weight: 600;
+                font-style: normal;
+            }
+            .crimson-text-bold {
+                font-family: "Crimson Text", serif;
+                font-weight: 700;
+                font-style: normal;
+            }
+            .crimson-text-regular-italic {
+                font-family: "Crimson Text", serif;
+                font-weight: 400;
+                font-style: italic;
+            }
+            .crimson-text-semibold-italic {
+                font-family: "Crimson Text", serif;
+                font-weight: 600;
+                font-style: italic;
+            }
+            .crimson-text-bold-italic {
+                font-family: "Crimson Text", serif;
+                font-weight: 700;
+                font-style: italic;
+            }
+            body {
+                text-align: center;
+                margin: 0;
+                padding: 0;
+                background-color: #ffcdec;
+            }
+            .container {
+                max-width: 600px;
+                margin: 50px auto;
+                padding: 20px;
+                background: white;
+                border-radius: 15px;
+                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            }
+            .container2 {
+                background-color: #ffe6f5;
+                color: #000000;
+                border: 2px solid #e60073;
+                padding: 20px;
+            }
+            /* el estilo general por así decirlo */
+            .menu {
+                font-family: "Crimson Text", serif;
+                font-weight: 700;
+                font-style: italic;
+                background-color: #000000;
+                overflow: hidden;
+                display: flex;
+                justify-content: center;
+                padding: 0;
+            }
+            /* los botoncitos */
+            .menu a {
+                display: block;
+                color: white;
+                text-align: center;
+                padding: 14px 20px;
+                text-decoration: none;
+                transition: 0.3s;
+            }
+            /* para cndo el mouse está encima lol */
+            .menu a:hover {
+                background-color: #4b4b4b;
+            }
+            /* y pa la pestaña activa */
+            .active {
+                background-color: #e60073;
+            }
+            hr {
+                border: 1px solid #000000;
+            }
+            h1 {
+                font-family: "Crimson Text", serif;
+                font-weight: 700;
+                font-style: italic;
+                font-size: 35px;
+                color: #e60073;
+                transition: transform 0.3s ease;
+            }
+            h1:hover {
+                transform: scale(1.1);
+            }
+            p {
+                font-family: Arial, sans-serif;
+                font-size: 18px;
+                color: #333;
+                max-width: 600px;
+                margin: 50px auto;
+                margin-top: 10px;
+                text-align: center;
+            }
+            .heart {
+                font-size: 50px;
+                margin-top: -30px;
+                margin-bottom: 2px;
+                color: pink;
+                transition: transform 0.3s ease;
+            }
+            .heart:hover {
+                transform: scale(1.2);
+            }
+            button {
+                margin-top: 0px;
+                margin-bottom: 10px;
+            }
+            .button {
+                display: inline-block;
+                background: #e60073;
+                color: white;
+                padding: 10px 20px;
+                margin-top: 20px;
+                border-radius: 25px;
+                text-decoration: none;
+                font-weight: bold;
+            }
+            .button:hover {
+                background: #ff4081;
+            }
+            .button2 {
+                font-family: "Mochiy Pop P One", serif;
+                font-weight: 400;
+                font-style: normal;
+                display: inline-block;
+                background: #e60073;
+                color: white;
+                padding: 10px 50px;
+                min-width: 200px;
+                margin-top: 20px;
+                margin-bottom: -20px;
+                border-radius: 15px;
+                text-decoration: none;
+            }
+            .image-container {
+                margin-top: 20px;
+            }
+            img {
+                max-width: 100%;
+                border-radius: 10px;
+                transition: box-shadow 0.3s ease;
+                transition: transform 0.3s ease;
+            }
+            img:hover {
+                box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+                transform: scale(1.1);
+            }
+            .video-container {
+                margin-top: 20px;
+                display: flex;
+                justify-content: center;
+            }
+            .typing {
+                overflow: hidden;
+                white-space: nowrap;
+                border-right: 3px solid;
+                animation: typing 3s steps(20) forwards, blink 0.5s infinite;
+            }
+            @keyframes typing {
+                from { width: 0; }
+                to { width: 100%; }
+            }
+            @keyframes blink {
+                50% { border-color: transparent; }
+            }
+            @keyframes fall {
+                to { transform: translateY(100vh); opacity: 0; }
+            }
+            footer {
+                background-color: #c969a4;
+                color: white;
+                padding: 10px;
+                position: relative;
+                bottom: 0;
+                width: 100%;
+                text-align: center; 
+            }
+            @keyframes fadeIn {
+                from {
+                    opacity: 0;
+                }
+                to {
+                    opacity: 1;
+                }
+            }
+            img {
+                animation: fadeIn 2s ease-in;
+            }
+            footer {
+                font-family: Arial, sans serif;
+                background-color: #c969a4;
+                color: white;
+                padding: 10px;
+                position: relative;
+                bottom: 0;
+                width: 100%;
+                text-align: center; 
+            }
+        </style>
+    </head>
+    <body>
+        <div class="menu">
+            <a href="./index.html">Start page</a>
+            <a href="./guess.html">Joder</a>
+            <a href="./joder.html" class="active">Fumar asfalto</a>
+        </div>
+        <h1><u>vendo chapapote para fumar</u></h1>
+        <hr>
+        <div class="container">
+            <div class="image-container">
+                <img src="./img_/gay.jpg" alt="callaaa">
+            <p>AAAAAAAAAAAAAAAAAARGH.</p>
+            <p class="heart">🏃‍♂️🏃‍♂️🏃‍♂️</p>
+        </div>
+    </div>
+    </body>
+    <footer>grrrrrrr do not smoke.
+    </footer>
+</html>
